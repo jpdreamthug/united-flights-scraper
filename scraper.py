@@ -237,6 +237,7 @@ class UnitedAirlinesScraper:
             page = context.new_page()
 
             try:
+                page.goto("https://bot.sannysoft.com")
                 page.goto(self.base_url)
                 page.wait_for_load_state("networkidle")
 
